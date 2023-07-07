@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Ievadi skaitli x:");
+        int usr_x = scan.nextInt();
+
+        System.out.println("Ievadi skaitli y:");
+        int usr_y = scan.nextInt();
+
+        System.out.println("Darbība (+, -, *, /): ");
+        String usr_op = scan.next();
+
+        int answer = 0;
+        switch (usr_op) {
+            case "+":
+                answer = usr_x + usr_y;
+                break;
+            case "-":
+                answer = usr_x - usr_y;
+                break;
+            case "*":
+                answer = usr_x * usr_y;
+                break;
+            case "/":
+                answer = usr_x / usr_y;
+                break;
+
+            default:
+                System.out.println("Nevar Izpildīt");
+
+
+        }
+
+        System.out.println("Rezultāts: " + answer);
+
+    }
+
+
+
+}
